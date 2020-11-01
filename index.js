@@ -5,17 +5,14 @@ const pjson = require('./package.json');
 const bonuses = require("./connectors/bonusly-client");
 const articles = require("./connectors/medium-client");
 
-const server = Hapi.server({
-    port: 3000,
-    host: 'localhost'
-});
+const server = Hapi.server({ port: process.env.PORT || 3000 });
 
 const registerRoutes = () => {
     server.route({
         method: 'GET',
         path: '/',
         handler: (request, h) => {
-            return h.response({version : pjson.version, message : 'welcome to kailash.space web services built with hapi'})
+            return h.response({ version: pjson.version, message: 'welcome to kailash.space web services built with hapi' })
         }
     });
 
