@@ -1,0 +1,31 @@
+{
+  "name": "webservices.kailash.space",
+  "version": "0.0.1",
+  "description": "This project will serve as backend to the web application which i will build to showcase my skillsets.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "lint": "eslint --ext .js"
+  },
+  "keywords": [
+    "nodeJS",
+    "AWS",
+    "Azure",
+    "Serverless",
+    "github",
+    "resume",
+    "backend",
+    "hapi"
+  ],
+  "author": "Kailas Walldoddi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kailashw/webservices.kailash.space.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^20.0.1",
+    "dotenv": "^8.2.0",
+    "unirest": "^0.6.0"
+  }
+}
