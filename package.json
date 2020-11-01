@@ -4,6 +4,8 @@
   "description": "This project will serve as backend to the web application which i will build to showcase my skillsets.",
   "main": "index.js",
   "scripts": {
+    "setup-win":"copy .sample_env .env",
+    "setup-linux":"cp .sample_env .env",
     "start": "node ./index.js",
     "lint": "eslint --ext .js"
   },

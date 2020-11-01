@@ -11,6 +11,13 @@ Install the [node package manager](https://nodejs.org/en/download/) to install n
 npm i 
 ```
 
+## Post-Installation
+Run following command to set up .env file. replace the .env file content with appropritate values.
+```
+npm run setup-win                   // if running on windows
+npm run setup-linux                 // if running on other machines
+```
+
 Run the following command to access webservice.kailash.space code locally
 
 
